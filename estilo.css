@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    
+    margin: 0; /*zera a margem */
+     padding: 0;    /*zera o padding */
+    box-sizing: border-box; /*faz com que o padding e a borda sejam incluídos na largura e altura total do elemento */
+    font-family: 'Poppins', sans-serif;  /*define a fonte padrão para o site*/
+
+}
+
+
+body  {
+    background: #081b29;   /*define a cor de fundo do site */
+    color: #f7f7f7; /*define a cor do texto do site */
+    
+}
+
+
+.cabecalho /*estiliza o header do site*/{
+    position: fixed; /*fixa o header no topo da página */
+    top: 0; /*define a posição do header no topo da página */
+    left: 0; /*define a posição do header na esquerda da página */
+    width: 100%; /*define a largura do header para ocupar toda a largura da página */
+    padding: 20px 10%; /*adiciona um espaçamento interno de 20px */
+    background-color: transparent;    /*define a cor de fundo do header */
+    display: flex; /*define o layout do header como flexbox */
+    justify-content: space-between; /*alinha os itens do header com espaço entre eles */
+    align-items: center; /*alinha os itens do header verticalmente ao centro */
+    z-index: 1000; /*garante que o header fique acima de outros elementos*/
+}
+
+
+.logo {
+    font-size: 25px; /*define o tamanho da fonte do logo */
+    font-weight: 600; /*define a espessura da fonte do logo */
+    color: #f7f7f7; /*define a cor do texto do logo */
+    text-decoration: none; /*remove a decoração de texto do logo */
+}
+
+
+.barrasnav a {
+    font-size: 18px; /*define o tamanho da fonte da barra de navegação */
+    color: #fff; /*define a cor do texto da barra de navegação */
+    text-decoration: none; /*remove a decoração de texto da barra de navegação */
+    font-weight: 500; /*define a espessura da fonte da barra de navegação */
+    margin: 35px; /*adiciona um espaçamento entre os links da barra de navegação */
+    
+}
+
+
+.barrasnav a {
+    margin-left: 20px; /*adiciona um espaçamento à esquerda dos links da barra de navegação */
+    color: #fff; /*define a cor do texto dos links da barra de navegação */
+    text-decoration: none; /*remove a decoração de texto dos links da barra de navegação */
+    font-weight: 500; /*define a espessura da fonte dos links da barra de navegação */
+}
+
+
+.barrasnav a:hover,
+.barrasnav a.ative {
+    color: #5c85df; /*define a cor do texto dos links da barra de navegação quando o mouse passa por cima */
+    
+}
+
+
+.conteudo {
+        height:  100vh; /*define a altura do conteúdo para ocupar toda a altura da janela do navegador */
+        display: flex; /*define o layout do conteúdo como flexbox */
+        align-items: center; /*alinha os itens do conteúdo verticalmente ao centro */
+        padding: 0 10%; /*adiciona um espaçamento interno de 10% nas laterais do conteúdo */
+    
+}
+
+.apresentacao {
+    max-width: 600px; /*define a largura máxima da apresentação */
+}
+
+.apresentacao h1 {
+    font-size: 48px; /*define o tamanho da fonte do título da apresentação */
+    font-weight: 700; /*define a espessura da fonte do título da apresentação */
+    color: #f7f7f7; /*define a cor do texto do título da apresentação */
+    margin-bottom: 20px; /*adiciona um espaçamento abaixo do título da apresentação */
+}
+
+.apresentacao p {
+    font-size: 18px; /*define o tamanho da fonte do parágrafo da apresentação */
+    color: #f7f7f7; /*define a cor do texto do parágrafo da apresentação */
+    line-height: 1.5; /*define a altura da linha do parágrafo da apresentação */
+    margin-bottom: 30px; /*adiciona um espaçamento abaixo do parágrafo da apresentação */
+}
+
+.apresentacao a {
+    display: inline-flex; /*define o link da apresentação como um bloco em linha */
+    justify-content: center; /*alinha o conteúdo do link da apresentação ao centro */
+    align-items: center; /*alinha o conteúdo do link da apresentação verticalmente ao centro*/
+    width: 200px; /*define a largura do link da apresentação */
+    height: 300%; /*define a altura do link da apresentação */
+    background-color: #154fcc; /*define a cor de fundo do link da apresentação */
+    border: 10px solid #154fcc; /*define a borda do link da apresentação */
+    border-radius: 8px; /*define o raio da borda do link da apresentação */
+    font-size: 19px; /*define o tamanho da fonte do link da apresentação */
+    color: #000000; /*define a cor do texto do link da apresentação */
+    text-decoration: none; /*remove a decoração de texto do link da apresentação */
+    font-weight: 600; /*define a espessura da fonte do link da apresentação */
+    letter-spacing: 1px; /*define o espaçamento entre as letras do link da apresentação */
+     
+}
+
+.contato a:nth-child(2) {
+    background: transparent;
+    color: #154fcc;
+}
